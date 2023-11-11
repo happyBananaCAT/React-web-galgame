@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* 字体 */
+@font-face {
+  font-family: "SiYuan";
+  src: url(../public/ProjectRes/Font/SubsetOTF/CN/SourceHanSansCN-Medium.otf);
+}
+@font-face {
+  font-family: "Consolas";
+  src: url(../public/ProjectRes/Font/Consolas/consola.ttf);
+}
+/* 全局 */
+.hide {
+  display: none;
+}
+.hidden{
+  opacity: 0;
+}
+.ImageLoad{
+  width: 0;
+  height: 0;
+}
+.window{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.disabled{
+  pointer-events: none;
+}
+.fontBold{
+  font-size:30px;
+  font-weight: bolder;
+  /* 文字加粗 */
+}
+
+
+  /* 场景及角色样式 */
+  .Nav{
+    width: 70vw;
+    height: 13vh;
+    background-size:cover;
+    margin: 0;
+    /* background-image: url("https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1j65my.img?w=500&h=281&m=6&x=208&y=70&s=103&d=103"); */
+  }
+  .Footer{
+    width: 70vw;
+    height: 13vh;
+    background-size:cover;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+  }
+  /* This was made with GlassGenerator.netlify.app */ 
+
+  .NavImage{
+    width: 100%;
+    height: 100%;
+    float: top;;
+  }
+
+.glass-container{
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  backdrop-filter: blur(14px);
+  background-color: rgba(255,255,255, 0.062);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+
+}
+  .SenceStyle{
+    width: 70vw;
+    height: 100vh;
+    float: left;
+     background-image: url("../public/ProjectRes/CG/CG02_3.png");
+     background-size: cover;
+  }
+  .MainSenceStyle{
+    width:70vw;
+    height:74vh;
+    float:left;
+    background-size:cover;
+    }
+  .PicStyle{
+      width:12vw;
+      height:30vh;
+      background-size:cover;
+      position:absolute;
+      left:30vw;
+      bottom:25vh;
+    }
+
+    .ImgStyle{
+      width:100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* 对话框及文字样式*/
+    .DialogStyle{
+      width:70vw;
+      height: 25vh;
+      float:left;
+      position:absolute;
+      bottom:13vh;
+      background-image: url(../public/ProjectRes/Sprite/FRM_0101.png);
+      background-size:cover;
+      border-radius: 25px;
+      font-family: "SiYuan";
+    }
+    /* .DialogStyle.show{
+      width: 70vw;
+    } */
+    .NameStyle{
+      margin: auto;
+      margin-top: 1vh;
+      margin-left: 5vw;
+      border-bottom: 1px solid;
+      min-width: 50%;
+      height: 5vh;
+    }
+    .TextStyle{
+      margin-left :5vw; 
+      margin-right: 5vw;
+      margin-top: 2vh;
+      white-space: pre-wrap;
+      font-size: 20px
+    }
+    /* 文本编辑器样式 */
+  .EditorStyle{
+    width: 30vw;
+    height: 100vh;
+    position:relative;
+    left: 0vw;
+    float: right;
+    top:0vh;
+  }
+  /* .CodeMirror * {
+
+      font-family: "Consolas";
+      font-size:20px;
+    } */
+
+  /* 选择框样式 */
+.selectStyle{
+    position:absolute;
+    top:12vh;
+    width:70vw;
+    height:75vh;
+  }
+.selectStyle .midSelectStyle{
+  position:absolute;
+  left:20%;
+  opacity:1;
+  height:65%;
+  width:60%;
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+}
+.selectStyle .midSelectStyle .choiceStyle {
+  width:100%;
+  height:10%;
+  font-size:25px;   
+  margin-top: 10%;
+  border-radius: 10px;
+  background-image: url(../public/ProjectRes/Sprite/FRM_0102.png);
+  background-size:cover;
+  border-radius: 25px;
+  font-family: "SiYuan";
+}
+/* 悬停添加箭头图标 */
+.Button {
+  position: absolute;
+  bottom: 0;
+  background-color: #636e72;
+  color: #ffff;
+  font-size: 28px;
+  font-weight: 400;
+  width: 100%;
+  height: 7%;
+  transition: all 0.5s;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.Button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.Button span::after {
+  content: ">";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.Button:hover span {
+  padding-right: 30px;
+}
+.Button:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
